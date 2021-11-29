@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollo de marco teorico Taekwon-do">
+    <meta name="keywords" content="Taekwon-do; teoría;historia;cateogías">
+    <title>Marco teorico</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <style>
+        .contenedorGrid {
+            display: grid;
+            background-color: lightblue;
+            width: 100%;
+            padding: 20px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            font-size: 15px;
+            grid-template-areas:
+                "header header"
+                "h2 h2"
+                "div aside"
+                "footer footer";
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        div {
+            grid-area: div;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        h2 {
+            grid-area: h2;
+        }
+
+
+        @media only screen and (min-width:320px) and (max-width:480px) {
+            body {
+                background-color: aquamarine;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-row: 1/4;
+                grid-column: 1/4;
+            }
+
+            .nav {
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+
+            .main {
+                grid-row: 3/4;
+                grid-column: 3/4;
+            }
+
+            .footer {
+                grid-row: 4/4;
+                grid-column: 4/4;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1024px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-row: 1/4;
+                grid-column: 1/4;
+            }
+
+            .nav {
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+
+            .main {
+                grid-row: 3/4;
+                grid-column: 3/4;
+            }
+
+            .footer {
+                grid-row: 4/4;
+                grid-column: 4/4;
+            }
+        }
+
+        @media only screen and (min-width:1024px) and (max-width: 1200px) {
+            body {
+                background-color: brown;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-row: 1/4;
+                grid-column: 1/4;
+            }
+
+            .nav {
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+
+            .main {
+                grid-row: 3/4;
+                grid-column: 3/4;
+            }
+
+            .footer {
+                grid-row: 4/4;
+                grid-column: 4/4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="contenedorGrid">
+
+        <header>
+            <h1>Taekwon-do ITF</h1>
+            <h2><b>Teoría</b></h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="index.html"><img src="Logo itf.png"></a>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="clases.html">Contenido clases</a></li>
+                            <li class="nav-item"><a class="nav-link" href="teoria.html">Teoria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">Sobre nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <h1>Teoría</h1>
+        <div>
+            <ol TYPE="A">
+                <li>Cinturón blanco</li>
+                <li>Cinturón blanco punta amaralla</li>
+                <li>Cinturón amarillo</li>
+                <li>Cinturón amarillo punta verde</li>
+                <li>Cinturón verde</li>
+                <li>Cinturón verde punta azul </li>
+                <li>Cinturón azul</li>
+                <li>Cinturón azul punta roja</li>
+                <li>Cinturón rojo</li>
+                <li>Cinturón rojo punta negra</li>
+
+            </ol>
+        </div>
+        <aside><iframe width="560" height="315" src="https://www.youtube.com/embed/9CUgB1UucmI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="paraTransicionFooter">
+            <a href="index.html">Back</a>
+        </div>
+    </footer>
+</body>
+
+</html>

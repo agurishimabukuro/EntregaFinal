@@ -1,0 +1,105 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    th {
+        color: blueviolet;
+        background-color: darkgrey;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    h1 {
+        color: cornflowerblue;
+        font-size: larger;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    h2 {
+        color: CORNFLOWERBLUE;
+        font-style: italic;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    p {
+        text-align: justify;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+
+    table {
+        border: 2px;
+        border-color: black;
+        border-top-style: dashed;
+        border-bottom-style: dotted;
+        border-left-style: double;
+        border-right-style: double;
+        border-width: 4px;
+    }
+
+    .ul {
+        list-style: none;
+        background-color: coral;
+        border: 2px solid #000;
+        font-size: 0;
+    }
+
+    .li {
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .ul ul {
+        position: absolute;
+        display: none;
+    }
+
+    .ul ul li {
+        display: block;
+    }
+
+    .l-s-image li {
+        list-style-image: url("icons8-google-photos-50.png");
+        list-style-position: inside;
+    }
+
+    .l-2 li {
+        list-style-position: inside;
+        list-style-type: inherit;
+    }
+
+    footer {
+        background-image: linear-gradient(lightblue, white);
+        width: 100%;
+        height: 100px;
+        padding: 50px 0 0 0;
+        text-align:end;
+    }
+
+    .paraTransicionFooter:hover {
+        transition: 3s;
+        font-size: 3rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+        width: 65px;
+        align-content: flex-start;
+    }
+
+    .navBar {
+        width: 150px;
+        height: 80px;
+        align-content: flex-end;
+    }

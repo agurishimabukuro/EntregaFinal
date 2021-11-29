@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre nosotros y el arte marcial que practicamos">
+    <meta name="keywords" content="Taekwon-do; about-us;Información; desarrollo">
+    <title>TKDSobreNosotros</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <style>
+        .contenedor {
+            display: flexbox;
+            background-color: lightblue;
+            width: 100%;
+            padding: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            font-size: 15px;
+        }
+
+        .aside {
+            height: 285px;
+            width: 35%;
+            background-color: lightcoral;
+            margin-right: 20px;
+        }
+
+        .imagen {
+            height: 90px;
+            width: 30%;
+            align-content: flex-start;
+
+        }
+
+        @media only screen and (min-width:320px) and (max-width:480px) {
+            body {
+                background-color: aquamarine;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-row: 1/4;
+                grid-column: 1/4;
+            }
+
+            .nav {
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+
+            .main {
+                grid-row: 3/4;
+                grid-column: 3/4;
+            }
+
+            .footer {
+                grid-row: 4/4;
+                grid-column: 4/4;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1024px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-row: 1/4;
+                grid-column: 1/4;
+            }
+
+            .nav {
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+
+            .main {
+                grid-row: 3/4;
+                grid-column: 3/4;
+            }
+
+            .footer {
+                grid-row: 4/4;
+                grid-column: 4/4;
+            }
+        }
+
+        @media only screen and (min-width:1024px) and (max-width: 1200px) {
+            body {
+                background-color: brown;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .header {
+                grid-row: 1/4;
+                grid-column: 1/4;
+            }
+
+            .nav {
+                grid-row: 2/4;
+                grid-column: 2/4;
+            }
+
+            .main {
+                grid-row: 3/4;
+                grid-column: 3/4;
+            }
+
+            .footer {
+                grid-row: 4/4;
+                grid-column: 4/4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Taekwon-do ITF</h1>
+            <h2><b>Sobre nosotros</b></h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="index.html"><img src="Logo itf.png"></a>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="clases.html">Contenido clases</a></li>
+                            <li class="nav-item"><a class="nav-link" href="teoria.html">Teoria</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">Sobre nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <h1>Sobre nosotros</h1>
+            <aside class="aside">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, ducimus eum eveniet qui
+                    repudiandae, dignissimos odit animi dolores tempora voluptatibus eos rerum ratione nemo ullam atque
+                    aperiam
+                    enim aut! <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illum eaque voluptatem ex tempora,
+                    ratione,
+                    assumenda quaerat, voluptates dolor fuga numquam adipisci ad veritatis expedita magni non obcaecati
+                    eligendi! Impedit.<br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui deleniti iure alias soluta magni,
+                    animi sint
+                    modi voluptatum aperiam quos eveniet dignissimos rerum eligendi architecto facere nostrum obcaecati
+                    optio
+                    dicta. <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, animi ut. Optio itaque illo nostrum
+                    repellat
+                    voluptatum molestias qui labore est libero voluptate sed, quod ad veritatis rerum. Deleniti, nihil.
+                </p>
+            </aside>
+
+            <img class="imagen" src="Logo itf.png">
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="paraTransicionFooter">
+            <a href="index.html">Back</a>
+        </div>
+    </footer>
+</body>
+
+</html>
